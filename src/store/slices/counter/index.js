@@ -1,1 +1,6 @@
-export { counterSlice } from './counterSlice.js'
+export {
+  counterSlice,
+  decrement,
+  increment,
+  incrementBy
+} from './counterSlice.js'
