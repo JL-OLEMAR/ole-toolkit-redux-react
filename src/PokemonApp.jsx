@@ -8,7 +8,7 @@ export function PokemonApp () {
 
   useEffect(() => {
     dispatch(getPokemons())
-  }, [])
+  }, [dispatch])
 
   return (
     <>
@@ -22,10 +22,7 @@ export function PokemonApp () {
         ))}
       </ul>
 
-      <button
-        disabled={isLoading}
-        onClick={() => dispatch(getPokemons(page))}
-      >
+      <button disabled={isLoading} onClick={() => dispatch(getPokemons(page))}>
         Next
       </button>
     </>
