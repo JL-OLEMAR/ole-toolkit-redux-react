@@ -27,7 +27,7 @@
   "eslintConfig": {
     "extends": [
       "plugin:react-hooks/recommended",
-      "standard"
+      "./node_modules/standard/eslintrc.json"
     ],
     "rules": {
       "react-hooks/rules-of-hooks": "error",
